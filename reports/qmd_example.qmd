@@ -4,7 +4,7 @@ author: "Tiffany Timbers & Jordan Bourak"
 format: 
   html:
     toc: true
-    output-dir: ../docs   
+    output-dir: docs   
 editor: source
 execute:
   echo: false

@@ -7,8 +7,9 @@ all: results/horse_pop_plot_largest_sd.png \
 	reports/qmd_example.html \
 	reports/qmd_example.pdf
 
+
 docs/qmd_example.html: reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --output docs/qmd_example.html
+	quarto render reports/qmd_example.qmd --to html --output-dir docs
 
 # generate figures and objects for report
 results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses_spread.csv: source/generate_figures.R
